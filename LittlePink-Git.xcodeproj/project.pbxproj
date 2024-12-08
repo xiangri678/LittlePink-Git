@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D0A4466A2D055CDF00E462FE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D0A446692D055CDF00E462FE /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		D08735312D055425003F2B5C /* LittlePink-Git.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LittlePink-Git.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0A446692D055CDF00E462FE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -47,6 +52,7 @@
 			children = (
 				D08735332D055425003F2B5C /* LittlePink-Git */,
 				D08735322D055425003F2B5C /* Products */,
+				D0A446692D055CDF00E462FE /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0A4466A2D055CDF00E462FE /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
