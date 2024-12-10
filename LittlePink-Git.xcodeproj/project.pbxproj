@@ -8,11 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		D0A4466A2D055CDF00E462FE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D0A446692D055CDF00E462FE /* .gitignore */; };
+		D0B37DE82D06EC2E00A9972A /* XLPagerTabStrip in Frameworks */ = {isa = PBXBuildFile; productRef = D0B37DE72D06EC2E00A9972A /* XLPagerTabStrip */; };
+		D0BCE47F2D08766C00B2F9A4 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCE47E2D08766C00B2F9A4 /* HomeVC.swift */; };
+		D0BCE4812D08833800B2F9A4 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCE4802D08833800B2F9A4 /* FollowVC.swift */; };
+		D0BCE4832D08834000B2F9A4 /* NearByVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCE4822D08834000B2F9A4 /* NearByVC.swift */; };
+		D0BCE4852D08835300B2F9A4 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCE4842D08835300B2F9A4 /* DiscoveryVC.swift */; };
+		E35B124EF935737DC3B73DAC /* Pods_LittlePink_Git.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E7DE804EE524C39117AC8C /* Pods_LittlePink_Git.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00699EF5E3F63091330D4756 /* Pods-LittlePink-Git.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink-Git.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink-Git/Pods-LittlePink-Git.debug.xcconfig"; sourceTree = "<group>"; };
+		734B776C9F949AEE517BF467 /* Pods-LittlePink-Git.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink-Git.release.xcconfig"; path = "Target Support Files/Pods-LittlePink-Git/Pods-LittlePink-Git.release.xcconfig"; sourceTree = "<group>"; };
+		B9E7DE804EE524C39117AC8C /* Pods_LittlePink_Git.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePink_Git.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08735312D055425003F2B5C /* LittlePink-Git.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LittlePink-Git.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A446692D055CDF00E462FE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D0BCE47E2D08766C00B2F9A4 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		D0BCE4802D08833800B2F9A4 /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
+		D0BCE4822D08834000B2F9A4 /* NearByVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVC.swift; sourceTree = "<group>"; };
+		D0BCE4842D08835300B2F9A4 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -41,18 +54,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E35B124EF935737DC3B73DAC /* Pods_LittlePink_Git.framework in Frameworks */,
+				D0B37DE82D06EC2E00A9972A /* XLPagerTabStrip in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0898E7C46386B279B13B444D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9E7DE804EE524C39117AC8C /* Pods_LittlePink_Git.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14DF35F5C0531B52AF530D20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00699EF5E3F63091330D4756 /* Pods-LittlePink-Git.debug.xcconfig */,
+				734B776C9F949AEE517BF467 /* Pods-LittlePink-Git.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D08735282D055425003F2B5C = {
 			isa = PBXGroup;
 			children = (
 				D08735332D055425003F2B5C /* LittlePink-Git */,
+				D0BCE4882D08861800B2F9A4 /* VCs */,
 				D08735322D055425003F2B5C /* Products */,
 				D0A446692D055CDF00E462FE /* .gitignore */,
+				14DF35F5C0531B52AF530D20 /* Pods */,
+				0898E7C46386B279B13B444D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +99,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D0BCE4882D08861800B2F9A4 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				D0BCE4842D08835300B2F9A4 /* DiscoveryVC.swift */,
+				D0BCE4802D08833800B2F9A4 /* FollowVC.swift */,
+				D0BCE47E2D08766C00B2F9A4 /* HomeVC.swift */,
+				D0BCE4822D08834000B2F9A4 /* NearByVC.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +117,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D08735442D055427003F2B5C /* Build configuration list for PBXNativeTarget "LittlePink-Git" */;
 			buildPhases = (
+				A22EFF71EF93003C86E704A1 /* [CP] Check Pods Manifest.lock */,
 				D087352D2D055425003F2B5C /* Sources */,
 				D087352E2D055425003F2B5C /* Frameworks */,
 				D087352F2D055425003F2B5C /* Resources */,
@@ -83,8 +130,6 @@
 				D08735332D055425003F2B5C /* LittlePink-Git */,
 			);
 			name = "LittlePink-Git";
-			packageProductDependencies = (
-			);
 			productName = "LittlePink-Git";
 			productReference = D08735312D055425003F2B5C /* LittlePink-Git.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +158,9 @@
 			);
 			mainGroup = D08735282D055425003F2B5C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D0B37DE62D06EC2E00A9972A /* XCRemoteSwiftPackageReference "XLPagerTabStrip" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D08735322D055425003F2B5C /* Products */;
 			projectDirPath = "";
@@ -134,11 +182,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A22EFF71EF93003C86E704A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LittlePink-Git-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D087352D2D055425003F2B5C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BCE47F2D08766C00B2F9A4 /* HomeVC.swift in Sources */,
+				D0BCE4832D08834000B2F9A4 /* NearByVC.swift in Sources */,
+				D0BCE4812D08833800B2F9A4 /* FollowVC.swift in Sources */,
+				D0BCE4852D08835300B2F9A4 /* DiscoveryVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +224,7 @@
 /* Begin XCBuildConfiguration section */
 		D08735452D055427003F2B5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00699EF5E3F63091330D4756 /* Pods-LittlePink-Git.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -155,11 +233,13 @@
 				DEVELOPMENT_TEAM = 4CK86C56BH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "LittlePink-Git/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "小粉书";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -167,14 +247,17 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chloe.LittlePink-Git";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		D08735462D055427003F2B5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 734B776C9F949AEE517BF467 /* Pods-LittlePink-Git.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -183,11 +266,13 @@
 				DEVELOPMENT_TEAM = 4CK86C56BH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "LittlePink-Git/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "小粉书";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -195,9 +280,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chloe.LittlePink-Git";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -342,6 +429,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0B37DE62D06EC2E00A9972A /* XCRemoteSwiftPackageReference "XLPagerTabStrip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xmartlabs/XLPagerTabStrip.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0B37DE72D06EC2E00A9972A /* XLPagerTabStrip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0B37DE62D06EC2E00A9972A /* XCRemoteSwiftPackageReference "XLPagerTabStrip" */;
+			productName = XLPagerTabStrip;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D08735292D055425003F2B5C /* Project object */;
 }
