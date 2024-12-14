@@ -8,13 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D0A4466A2D055CDF00E462FE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D0A446692D055CDF00E462FE /* .gitignore */; };
-		D0B37DE82D06EC2E00A9972A /* XLPagerTabStrip in Frameworks */ = {isa = PBXBuildFile; productRef = D0B37DE72D06EC2E00A9972A /* XLPagerTabStrip */; };
 		D0BCE47F2D08766C00B2F9A4 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCE47E2D08766C00B2F9A4 /* HomeVC.swift */; };
 		D0BCE4812D08833800B2F9A4 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCE4802D08833800B2F9A4 /* FollowVC.swift */; };
 		D0BCE4832D08834000B2F9A4 /* NearByVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCE4822D08834000B2F9A4 /* NearByVC.swift */; };
 		D0BCE4852D08835300B2F9A4 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCE4842D08835300B2F9A4 /* DiscoveryVC.swift */; };
-		D0F4FCE32D0D9C320035C9FD /* WaterFallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F4FCE22D0D9C320035C9FD /* WaterFallVC.swift */; };
-		D0F4FCE52D0DAB230035C9FD /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F4FCE42D0DAB230035C9FD /* WaterfallCell.swift */; };
 		E35B124EF935737DC3B73DAC /* Pods_LittlePink_Git.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E7DE804EE524C39117AC8C /* Pods_LittlePink_Git.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +25,6 @@
 		D0BCE4802D08833800B2F9A4 /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
 		D0BCE4822D08834000B2F9A4 /* NearByVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVC.swift; sourceTree = "<group>"; };
 		D0BCE4842D08835300B2F9A4 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
-		D0F4FCE22D0D9C320035C9FD /* WaterFallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallVC.swift; sourceTree = "<group>"; };
-		D0F4FCE42D0DAB230035C9FD /* WaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -59,7 +54,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E35B124EF935737DC3B73DAC /* Pods_LittlePink_Git.framework in Frameworks */,
-				D0B37DE82D06EC2E00A9972A /* XLPagerTabStrip in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,8 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				D0BCE4842D08835300B2F9A4 /* DiscoveryVC.swift */,
-				D0F4FCE22D0D9C320035C9FD /* WaterFallVC.swift */,
-				D0F4FCE42D0DAB230035C9FD /* WaterfallCell.swift */,
 				D0BCE4802D08833800B2F9A4 /* FollowVC.swift */,
 				D0BCE47E2D08766C00B2F9A4 /* HomeVC.swift */,
 				D0BCE4822D08834000B2F9A4 /* NearByVC.swift */,
@@ -166,7 +158,6 @@
 			mainGroup = D08735282D055425003F2B5C;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				D0B37DE62D06EC2E00A9972A /* XCRemoteSwiftPackageReference "XLPagerTabStrip" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D08735322D055425003F2B5C /* Products */;
@@ -236,12 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0F4FCE52D0DAB230035C9FD /* WaterfallCell.swift in Sources */,
 				D0BCE47F2D08766C00B2F9A4 /* HomeVC.swift in Sources */,
 				D0BCE4832D08834000B2F9A4 /* NearByVC.swift in Sources */,
 				D0BCE4812D08833800B2F9A4 /* FollowVC.swift in Sources */,
 				D0BCE4852D08835300B2F9A4 /* DiscoveryVC.swift in Sources */,
-				D0F4FCE32D0D9C320035C9FD /* WaterFallVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +246,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4CK86C56BH;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "LittlePink-Git/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "小粉书";
@@ -290,6 +280,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4CK86C56BH;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "LittlePink-Git/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "小粉书";
@@ -455,25 +446,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		D0B37DE62D06EC2E00A9972A /* XCRemoteSwiftPackageReference "XLPagerTabStrip" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/xmartlabs/XLPagerTabStrip.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		D0B37DE72D06EC2E00A9972A /* XLPagerTabStrip */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D0B37DE62D06EC2E00A9972A /* XCRemoteSwiftPackageReference "XLPagerTabStrip" */;
-			productName = XLPagerTabStrip;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D08735292D055425003F2B5C /* Project object */;
 }

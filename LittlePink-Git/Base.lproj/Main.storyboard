@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bOf-u9-keG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UcX-1g-RUa">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
@@ -174,51 +174,6 @@
             </objects>
             <point key="canvasLocation" x="-256" y="-2202"/>
         </scene>
-        <!--DiscoveryVC-->
-        <scene sceneID="D2t-6a-Pid">
-            <objects>
-                <viewController storyboardIdentifier="DiscoveryVCID" id="jys-6O-rHf" customClass="DiscoveryVC" customModule="LittlePink_Git" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ewm-dx-vrk">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ej0-JO-H40">
-                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="yKE-ok-coM"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gNP-Sh-DdZ">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                            </collectionView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ntm-kI-Pbe">
-                                <rect key="frame" x="0.0" y="111" width="393" height="741"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="QbH-Jw-ACb"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="xsy-DY-AXm"/>
-                            </scrollView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="fK7-Tj-AGz"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="ej0-JO-H40" firstAttribute="leading" secondItem="fK7-Tj-AGz" secondAttribute="leading" id="CoZ-80-yDN"/>
-                            <constraint firstItem="fK7-Tj-AGz" firstAttribute="trailing" secondItem="ej0-JO-H40" secondAttribute="trailing" id="FZU-y2-Eiv"/>
-                            <constraint firstItem="ej0-JO-H40" firstAttribute="top" secondItem="fK7-Tj-AGz" secondAttribute="top" id="uMb-Zq-loe"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="containerView" destination="Ntm-kI-Pbe" id="vmp-8Y-Ptc"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5QF-Wi-YhW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="739.69465648854964" y="-1556.3380281690143"/>
-        </scene>
         <!--Water FallVC-->
         <scene sceneID="S4f-fR-KG7">
             <objects>
@@ -262,6 +217,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nu8-He-8oI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1748.854961832061" y="-1556.3380281690143"/>
+        </scene>
+        <!--DiscoveryVC-->
+        <scene sceneID="btu-f5-L7f">
+            <objects>
+                <viewController storyboardIdentifier="DiscoveryVCID" id="P0b-Nz-pTd" customClass="DiscoveryVC" customModule="LittlePink_Git" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OhJ-iy-IPv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OMJ-it-Ys1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UC9-kN-5qV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="740" y="-1556"/>
         </scene>
     </scenes>
     <resources>
