@@ -13,6 +13,8 @@
 		D0BCE4812D08833800B2F9A4 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCE4802D08833800B2F9A4 /* FollowVC.swift */; };
 		D0BCE4832D08834000B2F9A4 /* NearByVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCE4822D08834000B2F9A4 /* NearByVC.swift */; };
 		D0BCE4852D08835300B2F9A4 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCE4842D08835300B2F9A4 /* DiscoveryVC.swift */; };
+		D0F4FCE32D0D9C320035C9FD /* WaterFallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F4FCE22D0D9C320035C9FD /* WaterFallVC.swift */; };
+		D0F4FCE52D0DAB230035C9FD /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F4FCE42D0DAB230035C9FD /* WaterfallCell.swift */; };
 		E35B124EF935737DC3B73DAC /* Pods_LittlePink_Git.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E7DE804EE524C39117AC8C /* Pods_LittlePink_Git.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,8 @@
 		D0BCE4802D08833800B2F9A4 /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
 		D0BCE4822D08834000B2F9A4 /* NearByVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVC.swift; sourceTree = "<group>"; };
 		D0BCE4842D08835300B2F9A4 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
+		D0F4FCE22D0D9C320035C9FD /* WaterFallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallVC.swift; sourceTree = "<group>"; };
+		D0F4FCE42D0DAB230035C9FD /* WaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -103,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				D0BCE4842D08835300B2F9A4 /* DiscoveryVC.swift */,
+				D0F4FCE22D0D9C320035C9FD /* WaterFallVC.swift */,
+				D0F4FCE42D0DAB230035C9FD /* WaterfallCell.swift */,
 				D0BCE4802D08833800B2F9A4 /* FollowVC.swift */,
 				D0BCE47E2D08766C00B2F9A4 /* HomeVC.swift */,
 				D0BCE4822D08834000B2F9A4 /* NearByVC.swift */,
@@ -121,6 +127,7 @@
 				D087352D2D055425003F2B5C /* Sources */,
 				D087352E2D055425003F2B5C /* Frameworks */,
 				D087352F2D055425003F2B5C /* Resources */,
+				19B55CDEE2ACEF1F1FC7D1FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +190,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		19B55CDEE2ACEF1F1FC7D1FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LittlePink-Git/Pods-LittlePink-Git-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LittlePink-Git/Pods-LittlePink-Git-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LittlePink-Git/Pods-LittlePink-Git-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A22EFF71EF93003C86E704A1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,10 +236,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F4FCE52D0DAB230035C9FD /* WaterfallCell.swift in Sources */,
 				D0BCE47F2D08766C00B2F9A4 /* HomeVC.swift in Sources */,
 				D0BCE4832D08834000B2F9A4 /* NearByVC.swift in Sources */,
 				D0BCE4812D08833800B2F9A4 /* FollowVC.swift in Sources */,
 				D0BCE4852D08835300B2F9A4 /* DiscoveryVC.swift in Sources */,
+				D0F4FCE32D0D9C320035C9FD /* WaterFallVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

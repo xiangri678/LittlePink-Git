@@ -7,6 +7,6 @@
 
 import UIKit
 
-class CollectionViewCell: UICollectionViewCell {
-    
+class WaterfallCell: UICollectionViewCell {
+    @IBOutlet weak var imageView: UIImageView!
 }

@@ -7,6 +7,10 @@
 
 import Foundation
 
+// MARK: SB
 let kFollowVCID = "FollowVCID"
 let kNearByVCID = "NearByVCID"
-let kDIscoveryVCID = "DiscoveryVCID"
+let kDiscoveryVCID = "DiscoveryVCID"
+
+// MARK: Waterfall
+let kWaterfallCellVCID = "WaterFallCellID"

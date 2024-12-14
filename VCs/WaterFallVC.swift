@@ -6,19 +6,24 @@
 //
 
 import UIKit
+import CHTCollectionViewWaterfallLayout
 
-private let reuseIdentifier = "Cell"
+//private let reuseIdentifier = "Cell" // 在SB注册，不再需要手动注册
 
 class WaterFallVC: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let layout = collectionView.collectionViewLayout as! CHTCollectionViewWaterfallLayout
+        
+        layout.columnCount = 2
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
@@ -37,19 +42,20 @@ class WaterFallVC: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return 13
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kWaterfallCellVCID, for: indexPath) as! WaterfallCell
+        cell.imageView.image = UIImage(named: "\(indexPath.item + 1)")
     
-        // Configure the cell
+        // Configure the cell 建个class文件
     
         return cell
     }
@@ -85,4 +91,14 @@ class WaterFallVC: UICollectionViewController {
     }
     */
 
+}
+
+
+// MARK: - Delegate CHTCollectionViewDelegateWaterfallLayout
+extension WaterFallVC: CHTCollectionViewDelegateWaterfallLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        UIImage(named: "\(indexPath.item + 1)")!.size // 该协议要求实现这个方法，这个方法要求返回CGSize，因此获取图片大小，然后返回回去
+    }
+    
+    
 }

@@ -6,5 +6,7 @@ target 'LittlePink-Git' do
   use_frameworks!
 
   # Pods for LittlePink-Git
+  pod 'XLPagerTabStrip'
+  pod 'CHTCollectionViewWaterfallLayout'
 
 end
