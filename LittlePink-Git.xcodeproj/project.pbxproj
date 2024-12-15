@@ -81,7 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				D08735332D055425003F2B5C /* LittlePink-Git */,
-				D0BCE4882D08861800B2F9A4 /* VCs */,
+				D0BCE4882D08861800B2F9A4 /* Home */,
 				D08735322D055425003F2B5C /* Products */,
 				D0A446692D055CDF00E462FE /* .gitignore */,
 				14DF35F5C0531B52AF530D20 /* Pods */,
@@ -97,7 +97,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D0BCE4882D08861800B2F9A4 /* VCs */ = {
+		D0BCE4882D08861800B2F9A4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				D0BCE47E2D08766C00B2F9A4 /* HomeVC.swift */,
@@ -105,7 +105,7 @@
 				D0BCE4822D08834000B2F9A4 /* NearByVC.swift */,
 				D0BCE4802D08833800B2F9A4 /* FollowVC.swift */,
 			);
-			path = VCs;
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
