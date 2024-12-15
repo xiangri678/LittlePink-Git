@@ -19,7 +19,7 @@ class HomeVC: ButtonBarPagerTabStripViewController {
         settings.style.selectedBarHeight = 3
         
         // 3. 自定义buttonBarItem 导航栏内的、文本或图片形式的按钮
-        settings.style.buttonBarItemBackgroundColor = .clear
+        settings.style.buttonBarItemBackgroundColor = .clear// 这两种颜色可以自动适配深浅色模式
         settings.style.buttonBarItemFont = .systemFont(ofSize: 16)
         settings.style.buttonBarItemTitleColor = .label
         

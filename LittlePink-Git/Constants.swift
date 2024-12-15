@@ -13,4 +13,4 @@ let kNearByVCID = "NearByVCID"
 let kDiscoveryVCID = "DiscoveryVCID"
 
 // MARK: Waterfall
-let kWaterfallCellVCID = "WaterFallCellID"
+let kWaterfallCellVCID = "WaterfallCellID"
