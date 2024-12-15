@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CHTCollectionViewWaterfallLayout
 
 //private let reuseIdentifier = "Cell"  // SB 直接注册，不再手动注册
 
@@ -13,7 +14,9 @@ class WaterfallVC: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let layout = collectionView.collectionViewLayout as! CHTCollectionViewWaterfallLayout //  用 as! 专门指定为包的类型，才能在下面修改包定义的一些属性
+        layout.columnCount = 2
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -37,19 +40,19 @@ class WaterfallVC: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return 13
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kWaterfallCellVCID, for: indexPath)
-    
         // Configure the cell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kWaterfallCellVCID, for: indexPath) as! WaterfallCell
+        cell.imageview.image = UIImage(named: "\(indexPath.item + 1)")
     
         return cell
     }
@@ -85,4 +88,13 @@ class WaterfallVC: UICollectionViewController {
     }
     */
 
+}
+
+// MARK: - CHTCollectionViewDelegateWaterfallLayout
+extension WaterfallVC: CHTCollectionViewDelegateWaterfallLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        // 先去找到数据源，再取得它的CGSize，最后返回即可
+        UIImage(named: "\(indexPath.item + 1)")!.size // 强制解包，仅供暂时演示没问题
+
+    }
 }
