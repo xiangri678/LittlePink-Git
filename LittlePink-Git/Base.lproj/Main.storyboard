@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M0o-TH-lXx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UcX-1g-RUa">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
@@ -213,13 +213,12 @@
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xn9-Ow-kOx">
-                                <rect key="frame" x="0.0" y="111" width="393" height="741"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xn9-Ow-kOx">
+                                <rect key="frame" x="0.0" y="106" width="393" height="746"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="750-26-FD7"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="qQ1-tS-sVS"/>
                             </scrollView>
@@ -229,7 +228,11 @@
                         <constraints>
                             <constraint firstItem="egi-st-qlV" firstAttribute="leading" secondItem="OMJ-it-Ys1" secondAttribute="leading" id="Adg-Sd-2yh"/>
                             <constraint firstItem="egi-st-qlV" firstAttribute="trailing" secondItem="OMJ-it-Ys1" secondAttribute="trailing" id="I8i-UJ-s07"/>
+                            <constraint firstItem="xn9-Ow-kOx" firstAttribute="trailing" secondItem="egi-st-qlV" secondAttribute="trailing" id="Vd4-Vu-xX2"/>
+                            <constraint firstItem="xn9-Ow-kOx" firstAttribute="leading" secondItem="egi-st-qlV" secondAttribute="leading" id="VfF-Kf-HNJ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="xn9-Ow-kOx" secondAttribute="bottom" constant="-34" id="reb-oF-g1e"/>
                             <constraint firstItem="egi-st-qlV" firstAttribute="top" secondItem="OMJ-it-Ys1" secondAttribute="top" id="tLH-E9-h6D"/>
+                            <constraint firstItem="xn9-Ow-kOx" firstAttribute="top" secondItem="egi-st-qlV" secondAttribute="bottom" id="uF2-rb-2Y3"/>
                         </constraints>
                     </view>
                     <connections>
@@ -244,7 +247,7 @@
         <!--WaterfallVC-->
         <scene sceneID="NXk-oP-OZl">
             <objects>
-                <collectionViewController id="M0o-TH-lXx" customClass="WaterfallVC" customModule="LittlePink_Git" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="WaterfallVCID" id="M0o-TH-lXx" customClass="WaterfallVC" customModule="LittlePink_Git" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="WaterfallCellID" dataMode="prototypes" id="GIc-ye-1FK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

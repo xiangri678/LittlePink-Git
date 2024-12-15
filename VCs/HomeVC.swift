@@ -21,7 +21,6 @@ class HomeVC: ButtonBarPagerTabStripViewController {
         // 3. 自定义buttonBarItem 导航栏内的、文本或图片形式的按钮
         settings.style.buttonBarItemBackgroundColor = .clear// 这两种颜色可以自动适配深浅色模式
         settings.style.buttonBarItemFont = .systemFont(ofSize: 16)
-        settings.style.buttonBarItemTitleColor = .label
         
         // 包的要求：配置完成后再加载 viewDidLoad
         super.viewDidLoad()
